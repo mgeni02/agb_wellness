@@ -1,0 +1,40 @@
+<html>
+<head>
+ {{>header}}
+</head>
+<body class="bg-[url('/images/zenStones.png')] bg-no-repeat bg-cover bg-center ml-6 mr-6">
+<section>
+  <div class="container px-6 py-12 h-full">
+    <div class="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+      <div class="md:w-8/12 lg:w-5/12 lg:ml-20 bg-orange-50 rounded-lg p-16">
+      <h1 class="text-center text-yellow-900 font-semibold mb-8 text-4xl">Are You a Manager or a normal Employee?</h1>
+      <!-- Add goal Form -->
+        <form method="POST" action="/manager">
+           <!-- Choose role -->
+         <div class="flex justify-center">
+  <div class="mb-3">
+    <select id="role" name="role" required class=" form-control block w-full px-4 py-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+        <option selected>Employee/Manager</option>
+        <option value="employee">Employee</option>
+        <option value="manager">Manager</option>
+    </select>
+  </div>
+</div>
+
+
+
+          <!-- Submit button -->
+          <button
+            type="submit"
+            class="inline-block px-7 py-3 bg-yellow-900 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-900 active:shadow-lg transition duration-150 ease-in-out w-full"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light" >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

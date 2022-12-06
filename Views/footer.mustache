@@ -1,0 +1,21 @@
+<footer class="footer m">
+<div id="container" class="flex justify-between items-center bg-yellow-900">
+    <img class="object-scale-down h-32 w-50 " src="/images/logoFooter.png">  
+    <p class="text-center text-orange-50 font-semibold">Copyright (c) 2022</p>
+<div class="text-orange-50 text-right space-y-4 pr-4"> 
+            <ul>
+           {{#user}}  
+        <li><a href="/services">Services</a></li>
+        <li><a href="/view">Goal Tracker</a></li>
+        <li><a href="/logout">Log Out</a><li>
+        {{/user}}
+        {{^user}}
+        <li><a href="/Register">Register Now</a></li>
+        <li><a href="/login">Log In</a></li>
+         {{/user}}
+            </ul>
+             
+</div>
+
+            </div>
+  </footer>

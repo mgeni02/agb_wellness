@@ -1,0 +1,32 @@
+<div id="container" class="flex justify-between items-center m-6">
+<img class="object-scale-down h-32 w-50 " src="/images/logo.png">  
+<div class="text-orange-800 text-right space-x-4"> 
+ {{^user}}
+            <a id="login" href="/register" class="btn btn-primary">
+            Register Now
+            </a>
+            <a id="login" href="/login" class="btn btn-primary">
+            Login
+            </a>
+            {{/user}}
+            {{#user}}
+            <a id="home" href="/loggedIn" class="btn btn-primary">
+            Home
+            </a>
+            <a id="services" href="/services" class="btn btn-primary">
+            Services
+            </a>
+            <a id="goals" href="/view" class="btn btn-primary">
+            Goal Tracker
+            </a>
+            <a id="staff" href="/manager" class="btn btn-primary">
+            Staff List
+            </a>
+            <a id="logout" href="/logout" class="btn btn-primary">
+            Log out
+            </a>
+            {{/user}}
+             
+
+            </div>
+            </div>
